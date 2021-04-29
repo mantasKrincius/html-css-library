@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Man Not Hot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3bdb85ccfe.js" defer crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="d-flex f-center f-a-center main-color">
+            <div>
+                <img class="logo spin"
+                     src="https://ih1.redbubble.net/image.480913294.9960/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
+                     alt="real man">
+            </div>
+            <h1 class="text-color-light">BrownStrap Library</h1>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="grid-container">
+        <div class="">
+            <nav class="main-menu main-color side opacity m-5 hide600">
+                <ul class="d-sm-flex m0">
+                    <li><a href="#alerts">Alerts</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#navbars">NavBars</a></li>
+                    <li><a href="#inputs">Inputs</a></li>
+                </ul>
+            </nav>
+            <div class="hide unhide600">
+                <div class="d-flex f-center font-size30">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <section class="content" id="alerts">
+                <div class="d-flex f-center spinfour m-10">
+                    <h2> Alerts </h2>
+                </div>
+                <div class="d-flex f-center">
+                    <div class="d-flex f-col">
+                        <div>
+                            <div class="alert alertSuccess m-5" onclick="this.parentElement.style.display='none';">
+                                <p class="m-0 heavy-bold"><i class="fas fa-thumbs-up"></i>An example of "success" alert.
+                                    Click on me!</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="alert alertDangerous m-5" onclick="this.parentElement.style.display='none';">
+                                <p class="m-0 heavy-bold"><i class="fas fa-radiation"></i>An example of "dangerous"
+                                    alert. Click on me!
+                                    <a class="alertlink" href="#" target="_blank">More information</a></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="alert alertWarning m-5" onclick="this.parentElement.style.display='none';">
+                                <p class="m-0 light"><i class="fas fa-exclamation-triangle"></i>An example of
+                                    "warning" alert. Click on me!</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="alert alertInfo m-5" onclick="this.parentElement.style.display='none';">
+                                <p class="m-0 light-bold"><i class="fas fa-info"></i>An example of "info" alert. Click
+                                    on me!</p>
+                                <hr>
+                                <p class="m-0">You can add additional text here</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-center f-col f-a-center">
+                            <h4>Main classes to use for alerts:</h4>
+                            <ul>
+                                <li>To make a cursor pointer and size for alert blocks ".alert".</li>
+                                <li>Color classes: ".alertSuccess", ".alertDangerous", "alertWarning", "alertInfo".</li>
+                                <li>How bold gonna be the text ".heavy-bold", ".light-bold", ".light"</li>
+                                <li>To change font colors: text-color-dark, text-color-light, text-color-danger, text-color-warning</li>
+                                <li>We using a short JavaScript code here as well.</li>
+                            </ul>
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a class="active" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+                            <p>examples</p>
+                        </div>
+                        <div class="d-flex f-center f-col">
+                            <div class="alertSuccess examples m-10 p-10">
+                                &lt;div&gt;<br/>
+                                &lt;div class=&quot;alert alertSuccess&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;<br/>
+                                &lt;p class=&quot;m-0 heavy-bold&quot;&gt;&lt;i class=&quot;fas fa-thumbs-up&quot;&gt;&lt;/i&gt;An
+                                example of &quot;success&quot; alert.<br/>
+                                Click on me!&lt;/p&gt;<br/>
+                                &lt;/div&gt;<br/>
+                                &lt;/div&gt;
+                            </div>
+                            <div class="alertDangerous examples m-10 p-10">
+                                &lt;div&gt;<br/>
+                                &lt;div class=&quot;alert alertWarning&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;<br/>
+                                &lt;p class=&quot;m-0 light&quot;&gt;&lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;An
+                                example of<br/>
+                                &quot;warning&quot; alert. Click on me!&lt;/p&gt;<br/>
+                                &lt;/div&gt;<br/>
+                                &lt;/div&gt;
+                            </div>
+                            <div class="alertWarning examples m-10 p-10">
+                                &lt;div&gt;<br/>
+                                &lt;div class=&quot;alert alertWarning&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;<br/>
+                                &lt;p class=&quot;m-0 light&quot;&gt;&lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;An
+                                example of<br/>
+                                &quot;warning&quot; alert. Click on me!&lt;/p&gt;<br/>
+                                &lt;/div&gt;<br/>
+                                &lt;/div&gt;
+                            </div>
+                            <div class="alertInfo examples m-10 p-10">
+                                &lt;div&gt;<br/>
+                                &lt;div class=&quot;alert alertInfo&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;<br/>
+                                &lt;p class=&quot;m-0 light-bold&quot;&gt;&lt;i class=&quot;fas fa-info&quot;&gt;&lt;/i&gt;An
+                                example of &quot;info&quot; alert. Click<br/>
+                                on me!&lt;/p&gt;<br/>
+                                &lt;hr&gt;<br/>
+                                &lt;p class=&quot;m-0&quot;&gt;You can add additional text here&lt;/p&gt;<br/>
+                                &lt;/div&gt;<br/>
+                                &lt;/div&gt;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="second content" id="buttons">
+                <div class="d-flex f-center">
+                    <h2> Buttons </h2>
+                </div>
+                <div class="d-flex f-center f-wrap f-a-center">
+                    <button class="btn btn-accept btn-shadow">Accept</button>
+                    <button class="btn btn-cancel large-btn btn-hover">Cancel</button>
+                    <button class="btn btn-success medium-btn">Success</button>
+                    <button class="btn btn-danger btn-hover" disabled>Danger</button>
+                    <input class="btn btn-warning btn-action" type="submit" value="Warning">
+                </div>
+                <div class="d-flex f-center f-col f-a-center">
+                    <h4>Main classes to use for buttons:</h4>
+                    <ul>
+                        <li>Colors: btn-accept, btn-cancel, btn-success, btn-danger, btn-warning, btn-info</li>
+                        <li>To change size: large-btn or small-btn</li>
+                        <li>To make action: btn-action or to add the shadow btn-shadow, simple btn-hover</li>
+                        <li>Meanings of buttons:
+                            <ul>
+                                <li>1. Simple button with shadow</li>
+                                <li>2. Large button with simple hover</li>
+                                <li>3. Small button</li>
+                                <li>4. Disabled button with simple hover</li>
+                                <li>5. Simple button with action, addional it let you "submit" on the form</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <p>examples</p>
+                    <div>
+                        <div class="examples btn-accept m-10 p-10">
+                            &lt;button class=&quot;btn btn-accept btn-shadow&quot;&gt;Accept&lt;/button&gt;
+                        </div>
+                        <div class="examples btn-cancel m-10 p-10">
+                            &lt;button class=&quot;btn btn-cancel large-btn btn-hover&quot;&gt;Cancel&lt;/button&gt;&lt;br
+                            /&gt;<br/>
+                        </div>
+                        <div class="examples btn-success m-10 p-10">
+                            &lt;button class=&quot;btn btn-success medium-btn&quot;&gt;Success&lt;/button&gt;
+                        </div>
+                        <div class="examples btn-danger m-10 p-10">
+                            &lt;button class=&quot;btn btn-danger btn-hover&quot; disabled&gt;Danger&lt;/button&gt;
+                        </div>
+                        <div class="examples btn-warning m-10 p-10">
+                            &lt;input class=&quot;btn btn-warning btn-action&quot; type=&quot;submit&quot; value=&quot;Warning&quot;&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="third content" id="cards">
+                <div class="d-flex f-center">
+                    <h2> Cards </h2>
+                </div>
+                <div class="d-flex f-center f-around f-wrap">
+                    <div class="borders card-bg-dark m-10">
+                        <div class="d-flex f-center">
+                            <img class=""
+                                 src="https://cdn.luxe.digital/media/2020/10/01123242/best-winter-coats-men-budget-amazon-essentials-puffer-review-luxe-digital.jpg"
+                                 alt="add your pic">
+                        </div>
+                        <div class="text-box font-color-light">
+                            <p class="m-0">Enter your text here</p>
+                        </div>
+                    </div>
+                    <div class="borders-double card-bg-light m-10">
+                        <div class="d-flex f-center">
+                            <img class=" picture-round"
+                                 src="https://supernova00.biz/wp-content/uploads/2019/11/8b3357c1-ed68-411e-ba08-379b38c1c5e3.jpg"
+                                 alt="add your pic">
+                        </div>
+                        <div class="text-box">
+                            <p class="m-0">Enter your text here</p>
+                        </div>
+                        <div class="d-flex btn-center">
+                            <button class="btn btn-accept">Accept</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex f-center f-col f-a-center">
+                    <h4>Main classes to use for cards:</h4>
+                    <ul>
+                        <li>Background colors: card-bg-light, card-bg-normal, card-bg-dark, card-bg-danger</li>
+                        <li>Font colors: font-color-light, font-color-dark, font-color-important, font-color-warning
+                        </li>
+                        <li>Buttons side: btn-center, btn-right, btn-left</li>
+                        <li>Borders: border, border-dots, border-dot-dash, border-dot-dot-dash</li>
+                        <li>Card size: medium-card, large-card</li>
+                    </ul>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a class="active" href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <p>examples</p>
+                    <div class="examples card-bg-dark font-color-light m-10 p-10">
+                        &lt;div class=&quot;borders card-bg-dark m-10&quot;&gt;<br/>
+                        &lt;div class=&quot;d-flex f-center&quot;&gt;<br/>
+                        &lt;img class=&quot;&quot;<br/>
+                        src=&quot;&quot;<br/>
+                        alt=&quot;add your pic&quot;&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;div class=&quot;text-box font-color-light&quot;&gt;<br/>
+                        &lt;p class=&quot;m-0&quot;&gt;Enter your text here&lt;/p&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;/div&gt;
+                    </div>
+                    <div class="examples card-bg-light m-10 p-10 ">
+                        &lt;div class=&quot;borders-double card-bg-light m-10&quot;&gt;<br/>
+                        &lt;div class=&quot;d-flex f-center&quot;&gt;<br/>
+                        &lt;img class=&quot; picture-round&quot;<br/>
+                        src=&quot;&quot;<br/>
+                        alt=&quot;add your pic&quot;&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;div class=&quot;text-box&quot;&gt;<br/>
+                        &lt;p class=&quot;m-0&quot;&gt;Enter your text here&lt;/p&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;div class=&quot;d-flex btn-center&quot;&gt;<br/>
+                        &lt;button class=&quot;btn btn-accept&quot;&gt;Accept&lt;/button&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;/div&gt;
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="fourth content" id="lists">
+                <div class="d-flex f-center">
+                    <h2> Lists </h2>
+                </div>
+                <div class="d-flex f-around f-a-center f-wrap">
+                    <div>
+                        <ul class="list-style-none">
+                            <li class="list-box small-box list-color-success">First</li>
+                            <li class="list-box small-box list-color-success">Second</li>
+                            <li class="list-box small-box list-color-success">Third</li>
+                            <li class="list-box small-box list-color-success">Fourth</li>
+                            <li class="list-box small-box list-color-success">Fifth</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-style-none">
+                            <li class="medium-box list-box list-effect"><a class="text-decoration-none"
+                                                                           href="#">First</a></li>
+                            <li class="medium-box list-color-danger list-effect-two"><a class="text-decoration-none"
+                                                                                        href="#">Second</a>
+                            </li>
+                            <li class="medium-box list-box list-effect"><a class="text-decoration-none"
+                                                                           href="#">Third</a></li>
+                            <li class="medium-box list-color-danger list-effect-two"><a class="text-decoration-none"
+                                                                                        href="#">Fourth</a>
+                            </li>
+                            <li class="medium-box list-box list-effect"><a class="text-decoration-none"
+                                                                           href="#">Fifth</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-style-none horizontal-list">
+                            <li class="list-gaps large-box list-color-success list-effect">First</li>
+                            <li class="list-gaps large-box list-color-warning list-effect">Second</li>
+                            <li class="list-gaps large-box list-color-danger list-effect">Third</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex f-center f-col f-a-center">
+                    <h4>Main classes to use for liss:</h4>
+                    <ul>
+                        <li>Background colors: list-color-success, list-color-danger, list-color-warning</li>
+                        <li>Lists box size: small-box, medium-box, large-box</li>
+                        <li>Display or not lists styles and decorations: list-style-none and text-decoration-none</li>
+                        <li>Gaps between box list-gaps</li>
+                        <li>Horizontal lists: horizontal-list</li>
+                        <li>List box effects list-effect and list-effect-two</li>
+                        <li>List box borders on/off</li>
+                        <li>Additional option to use fixed size: fixed-size-small, fixed-size-normal, fixed-size-large
+                        </li>
+                        <li>Meanings of lists:
+                            <ul>
+                                <li>1. Simple list with different colors and borders</li>
+                                <li>2. Medium list addinional has link inside and hover</li>
+                                <li>3. Horizontal large list</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a class="active" href="#">4</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <h4>Examples</h4>
+                    <div class="examples list-color-success m-10 p-10">
+                        &lt;ul class=&quot;list-style-none&quot;&gt;<br />
+                        &lt;li class=&quot;list-box small-box list-color-success&quot;&gt;First&lt;/li&gt;<br />
+                        &lt;li class=&quot;list-box small-box list-color-success&quot;&gt;Second&lt;/li&gt;<br />
+                        &lt;li class=&quot;list-box small-box list-color-success&quot;&gt;Third&lt;/li&gt;<br />
+                        &lt;li class=&quot;list-box small-box list-color-success&quot;&gt;Fourth&lt;/li&gt;<br />
+                        &lt;li class=&quot;list-box small-box list-color-success&quot;&gt;Fifth&lt;/li&gt;<br />
+                        &lt;/ul&gt;
+                    </div>
+                    <div class="examples list-color-danger m-10 p-10">
+                        &lt;ul class=&quot;list-style-none&quot;&gt;<br />
+                        &lt;li class=&quot;medium-box list-box list-effect&quot;&gt;&lt;a class=&quot;text-decoration-none&quot;<br />
+                        href=&quot;#&quot;&gt;First&lt;/a&gt;&lt;/li&gt;<br />
+                        &lt;li class=&quot;medium-box list-color-danger list-effect-two&quot;&gt;&lt;a class=&quot;text-decoration-none&quot;<br />
+                        href=&quot;#&quot;&gt;Second&lt;/a&gt;<br />
+                        &lt;/li&gt;<br />
+                        &lt;li class=&quot;medium-box list-box list-effect&quot;&gt;&lt;a class=&quot;text-decoration-none&quot;<br />
+                        href=&quot;#&quot;&gt;Third&lt;/a&gt;&lt;/li&gt;<br />
+                        &lt;li class=&quot;medium-box list-color-danger list-effect-two&quot;&gt;&lt;a class=&quot;text-decoration-none&quot;<br />
+                        href=&quot;#&quot;&gt;Fourth&lt;/a&gt;<br />
+                        &lt;/li&gt;<br />
+                        &lt;li class=&quot;medium-box list-box list-effect&quot;&gt;&lt;a class=&quot;text-decoration-none&quot;<br />
+                        href=&quot;#&quot;&gt;Fifth&lt;/a&gt;&lt;/li&gt;<br />
+                        &lt;/ul&gt;
+                    </div>
+                    <div class="examples list-color-warning m-10 p-10">
+                        &lt;ul class=&quot;list-style-none horizontal-list&quot;&gt;<br />
+                        &lt;li class=&quot;list-gaps large-box list-color-success list-effect&quot;&gt;First&lt;/li&gt;<br />
+                        &lt;li class=&quot;list-gaps large-box list-color-warning list-effect&quot;&gt;Second&lt;/li&gt;<br />
+                        &lt;li class=&quot;list-gaps large-box list-color-danger list-effect&quot;&gt;Third&lt;/li&gt;<br />
+                        &lt;/ul&gt;
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="fifth content" id="navbars">
+                <div class="d-flex f-center">
+                    <h2> NavBars </h2>
+                </div>
+                <div class="d-flex f-center f-around f-a-center f-wrap f-md-col">
+                    <div>
+                        <nav>
+                            <ul class="horizontal-navbar p-20 navbar-bg-first w-100">
+                                <li><img class="logo spinTwo" src="img1.jpg" alt="logo"></li>
+                                <li class="p-30 list-effect"><a class="text-decoration-none" href="#">Home</a></li>
+                                <li class="p-30 list-effect"><a class="text-decoration-none" href="#">About</a></li>
+                                <li class="searchbar d-none"><input placeholder="Search press Enter"></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <nav>
+                            <ul class="vertical-navbar navbar-bg-warning w-100 spiner">
+                                <li><img class="logo" src="img1.jpg" alt="logo"></li>
+                                <li class="p-30 list-effect-two"><a class="text-decoration-none" href="#">Home</a></li>
+                                <li class="p-30 list-effect-two"><a class="text-decoration-none" href="#">About</a></li>
+                                <li class="p-30 list-effect-two"><a class="text-decoration-none" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="d-flex f-center f-col f-a-center">
+                    <h4>Main classes to use for NavBars:</h4>
+                    <ul>
+                        <li>Because Navbars are made from lists, you can use lists classes on it as well</li>
+                        <li>Font colors: navbar-bg-first, navbar-bg-warning</li>
+                        <li>You can add additional navbar button the as to list adding li</li>
+                        <li>Dont forget to add logo class to your logo picure</li>
+                        <li>Search bar request searchar class to make it at the same level with buttons</li>
+                    </ul>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <h4>Examples</h4>
+                    <div class="examples navbar-bg-first m-10 p-10">
+                        <div>&lt;nav&gt</div>
+                        <div>&lt;ul class="horizontal-navbar p-20 navbar-bg-first w-100"></div>
+                        <div>&lt;li&gt&lt;img class="logo" src="add your logo here" alt="logo">&lt;/li&gt</div>
+                        <div>&lt;li class="p-30 list-effect">&lt;a class="text-decoration-none" href="#">Home&lt;/a&gt&lt;/li&gt</div>
+                        <div>&lt;li class="p-30 list-effect">&lt;a class="text-decoration-none" href="#">About&lt;/a&gt&lt;/li&gt</div>
+                        <div>&lt;li class="searchbar">&lt;input placeholder="Search press Enter">&lt;/li&gt</div>
+                        <div>&lt;/ul&gt</div>
+                        <div>&lt;/div&gt</div>
+                    </div>
+                    <div class="examples navbar-bg-warning m-10 p-10">
+                        <div>&lt;nav&gt</div>
+                        <div>&lt;ul class="vertical-navbar navbar-bg-warning w-100"></div>
+                        <div>&lt;li&gt&lt;img class="logo" src="add your logo here" alt="logo">&lt;/li&gt</div>
+                        <div>&lt;li class="p-30 list-effect-two">&lt;a class="text-decoration-none" href="#">Home&lt;/a&gt&lt;/li&gt</div>
+                        <div>&lt;li class="p-30 list-effect-two">&lt;a class="text-decoration-none" href="#">About&lt;/a&gt&lt;/li&gt</div>
+                        <div>&lt;li class="p-30 list-effect-two">&lt;a class="text-decoration-none" href="#">Contact&lt;/a&gt
+                            &lt;/li&gt
+                        </div>
+                        <div>&lt;/ul&gt</div>
+                        <div>&lt;/nav&gt</div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="sixth content" id="inputs">
+                <div class="d-flex f-center">
+                    <h2> Inputs </h2>
+                </div>
+                <div class="d-flex f-center f-around f-col f-wrap f-a-center">
+                    <div class="borders-double p-10 m-10 input-bg-dark">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="lithuania">Lithuania</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="america">United States</option>
+                        </select>
+                    </div>
+                    <div class="borders-double p-10 m-10">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    <div>
+                        <div class="borders-double p-10 m-10 input-bg-warning">
+                            <input class="spinThree" type="checkbox" value=""
+                                   aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="borders-double p-10 m-10 ">
+                            <span>First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="borders-double  p-10 m-10 input-bg-danger">
+                            <span><i class="fas fa-keyboard p-10"></i>$</span>
+                            <span>0.00</span>
+                            <input type="text" class="form-control"
+                                   aria-label="Dollar amount (with dot and two decimal places)">
+                        </div>
+                    </div>
+                    <div class="d-flex f-center f-col f-a-center">
+                        <h4>Main classes to use for Inputs:</h4>
+                        <ul>
+                            <li><p>Inputs background: input-bg-dark, input-bg-warning, input-bg-danger</p></li>
+                            <li>If you need to make a bigger input label you can use p-10, p-20, p-30, p-50</li>
+                            <li>Borders: borders, borders-double, border-dots</li>
+                            <li>You can even use fixed size: fixed-size-small, fixed-size-normal, fixed-size-large</li>
+                            <li>Easy to upload icon</li>
+                        </ul>
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                        <h4>Examples</h4>
+                        <div class="examples m-10 p-10 input-bg-dark">
+                            &lt;div class=&quot;borders-double p-10 m-10 input-bg-dark&quot;&gt;<br/>
+                            &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;<br/>
+                            &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;<br/>
+                            &lt;option value=&quot;lithuania&quot;&gt;Lithuania&lt;/option&gt;<br/>
+                            &lt;option value=&quot;uk&quot;&gt;United Kingdom&lt;/option&gt;<br/>
+                            &lt;option value=&quot;america&quot;&gt;United States&lt;/option&gt;<br/>
+                            &lt;/select&gt;<br/>
+                            &lt;/div&gt;
+                        </div>
+                        <div class="examples m-10 p-10">
+                            &lt;div class=&quot;borders-double p-10 m-10&quot;&gt;<br/>
+                            &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt;<br/>
+                            &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;Your
+                            name..&quot;&gt;<br/>
+                            &lt;/div&gt;
+                        </div>
+                        <div class="examples m-10 p-10 input-bg-warning">
+                            &lt;div class=&quot;borders-double p-10 m-10 input-bg-warning&quot;&gt;<br/>
+                            &lt;input type=&quot;checkbox&quot; value=&quot;&quot; aria-label=&quot;Checkbox for
+                            following text input&quot;&gt;<br/>
+                            &lt;/div&gt;
+                        </div>
+                        <div class="examples m-10 p-10">
+                            &lt;div class=&quot;borders-double p-10 m-10 &quot;&gt;<br/>
+                            &lt;span&gt;First and last name&lt;/span&gt;<br/>
+                            &lt;input type=&quot;text&quot; aria-label=&quot;First name&quot; class=&quot;form-control&quot;&gt;<br/>
+                            &lt;input type=&quot;text&quot; aria-label=&quot;Last name&quot; class=&quot;form-control&quot;&gt;<br/>
+                            &lt;/div&gt;<br/>
+                        </div>
+                        <div class="examples m-10 p-10 input-bg-danger">
+                            &lt;div class=&quot;borders-double p-10 m-10 input-bg-danger&quot;&gt;<br/>
+                            &lt;span&gt;&lt;i class=&quot;fas fa-keyboard p-10&quot;&gt;&lt;/i&gt;$&lt;/span&gt;<br/>
+                            &lt;span&gt;0.00&lt;/span&gt;<br/>
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;<br/>
+                            aria-label=&quot;Dollar amount (with dot and two decimal places)&quot;&gt;<br/>
+                            &lt;/div&gt;
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <button class="hide unhide" id="totop"><a href="#" style="color: white">Top</a></button>
+            <hr>
+            <div class="d-flex f-center f-a-center f-col">
+                <div>
+                    <h3>User Knowledge of programing</h3>
+                </div>
+                <div class="m-10">
+                    <label>CSS Knowledge</label>
+                    <progress max="100" value="20">20%</progress>
+                </div>
+                <div class="m-10">
+                    <label>HTML Knowledge:</label>
+                    <progress max="100" value="30"> 30%</progress>
+                </div>
+            </div>
+            <hr class="mb-50">
+            <footer class="d-flex f-center">
+                <p>CopyRight 2021 will be more..</p>
+            </footer>
+        </div>
+        <!--        space to check and play with classes-->
+        <!--        space to check and play with classes-->
+        <!--        space to check and play with classes-->
+        <!--        space to check and play with classes-->
+        <!--        space to check and play with classes-->
+
+    </div>
+</div>
+</body>
+</html>
